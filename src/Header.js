@@ -20,7 +20,7 @@ function Header() {
                 <SearchIcon />
                 <input placeholder="Search "/>
             </div>
-            <div className="header_right">
+            <div className="header__right">
                 <HelpOutLineIcon />
             </div>
         </div>
