@@ -21,7 +21,7 @@ function Sidebar() {
             setChannels(
                 snapshot.docs.map(doc=>({
                     id:doc.id,
-                    name:doc.data().name
+                    name:doc.data().name,
 
                 })))
         ))
@@ -50,6 +50,10 @@ function Sidebar() {
            <SidebarOption Icon ={ExpandMoreIcon} title ="Channels" />
            <hr/>
            <SidebarOption Icon ={AddIcon} AddChannelOption title ="Add Channel" />
+
+           {channels.map(channel => (
+               <SidebarOption title={channel.name} id={channel.id} />
+           ))}
         </div>
     )
 }
