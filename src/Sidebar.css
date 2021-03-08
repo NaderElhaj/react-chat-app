@@ -3,6 +3,8 @@
     border-top:1px solid #49274b;
     max-width: 260px; 
     color: white;
+    max-width:260px;
+    flex: 0.3;
     
 }
 .sidebar > hr {
