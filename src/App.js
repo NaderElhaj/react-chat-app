@@ -5,6 +5,7 @@ import Sidebar from './Sidebar';
 import {BrowserRouter as Router , Switch, Route}
 from "react-router-dom";
 import Chat from './Chat';
+import Login from './Login';
 
 function App() {
   const [user,setUser] = useState(null)
@@ -12,7 +13,7 @@ function App() {
     <div className="app">
     <Router>
       {!user ? (
-        <h1>Login Page</h1>
+        <Login />
       ):(
         <>
           <Header />
