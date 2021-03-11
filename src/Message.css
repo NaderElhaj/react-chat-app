@@ -1,10 +1,23 @@
+*,html,body{
+    font-family: Roboto !important;
+    /* height:100%;
+    width:100%; */
+    overflow:hidden;
+}
+
 .message {
     display : flex ;
     align-items : center;
     padding: 20px;
 
 }
-
+.message h4{
+    color:#fff;
+    font-size: 14px;
+}
+.message h4 .message__timestamp{
+    font-size:10px;
+}
 .message >img {
     height: 50px;
     width: 50px;
@@ -17,7 +30,25 @@
 
 
 .message__timestamp{
-    color: grey;
+    color: white;
     font-weight: 300;
     font-size: 13px;
+}
+.sender .message__info{
+    background-color: #0084FF;
+    border-radius: 25px;
+    justify-content: flex-end;
+
+}
+.sender{
+    justify-content: flex-end;
+}
+.receiver .message__info{
+    background-color:#E4E6EB;
+    border-radius: 25px;
+}
+.message .avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
